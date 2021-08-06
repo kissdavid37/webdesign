@@ -49,7 +49,7 @@ function clickOnNextButton() {
         currentCd++;
 
         images.style.transitionDuration = "0.5s";
-        images.style.transform = "translate(-" + (1500 * currentCd) + "px)";
+        images.style.transform = "translate(-" + (document.body.clientWidth * currentCd) + "px)";
 
     }
 }
@@ -63,7 +63,7 @@ function clickOnPrevButton() {
         currentCd--;
 
         images.style.transitionDuration = "0.5s";
-        images.style.transform = "translate(" + (1500 * -currentCd) + "px)";
+        images.style.transform = "translate(" + (document.body.clientWidth * -currentCd) + "px)";
     }
 
 }
